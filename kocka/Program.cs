@@ -8,7 +8,7 @@ bodB.sourX = 4;
 bodB.sourY = -3;
 
 int Vzdalenost = bodA.Vzdalenost(bodB);
-Console.WriteLine("vzdalenost bodu je: " + Vzdalenost);
+Console.WriteLine("vzdalenost bodů "  " + Vzdalenost);
 
 class bod
 {
@@ -23,5 +23,14 @@ class bod
 
         double vysledek = Math.Abs(odm);
         return (int)vysledek;
+    }
+    public bod()
+    {
+        Console.WriteLine("napis souradnici x");
+        sourX = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("napis souradnici y");
+        sourY = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("souřadnice x: " + sourX);
+        Console.WriteLine("souřadnice y: " + sourY);
     }
 }
